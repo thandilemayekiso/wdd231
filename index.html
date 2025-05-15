@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 231 Home Page - Thandile Mayekiso" />
-  <meta name="author" content="Thandile Mayekiso" />
-  <title>Home | WDD 231</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/large.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 Home Page - Thandile Mayekiso">
+  <meta name="author" content="Thandile Mayekiso">
+  <title>WDD 231 | Thandile Mayekiso | Course Home Page</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/large.css">
+
+  <!-- JavaScript Files -->
   <script src="js/navigation.js" defer></script>
   <script src="js/date.js" defer></script>
   <script src="js/course.js" defer></script>
-  
 </head>
+
 <body>
   <header>
-    <img src="images/Thandile.jpg" alt="Your photo" />
+    <img src="images/thandile.jpg" alt="Thandile Mayekiso" width="75" height="75">
     <span>Thandile Mayekiso</span>
   </header>
 
   <nav>
-    <button id="menu">&#9776;</button>
-    <ul id="nav-menu">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="#">Chamber</a></li>
-      <li><a href="#">Final</a></li>
-      <li><a href="https://github.com/YOUR_USERNAME">GitHub Profile</a></li>
-      <li><a href="https://www.linkedin.com/in/thandile-mayekiso-4804971b9">LinkedIn</a></li>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final/index.html">Final</a></li>
+      <li><a href="https://github.com/thandilemayekiso" target="_blank">GitHub Profile</a></li>
+      <li><a href="https://www.linkedin.com/in/thandilemayekiso" target="_blank">LinkedIn</a></li>
     </ul>
   </nav>
 
   <main>
-    <h1>Home</h1>
+    <h1>WDD 231 Course Home Page</h1>
 
     <section>
-      <h2>Welcome to WDD 231</h2>
-      <p>This is the course homepage for Web Frontend Development II.</p>
+      <h2>About This Course</h2>
+      <p>This course covers responsive design, JavaScript, and best practices for building modern web experiences.</p>
     </section>
 
     <section>
-      <h2>My Progress</h2>
-      <div id="course-list"></div>
-      <div id="buttons">
-        <button id="all">All Courses</button>
-        <button id="wdd">WDD Courses</button>
-        <button id="cse">CSE Courses</button>
-      </div>
-      <p>Total Credits: <span id="total-credits">0</span></p>
+      <h2>Projects and Assignments</h2>
+      <p>Each week you'll build and deploy projects using HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
     </section>
 
     <section>
-      <h2>Resources</h2>
-      <p>Useful links and resources will be listed here.</p>
+      <h2>Course Certificate Progress</h2>
+      <div id="courseCards"></div>
+      <div id="creditTotal"></div>
+      <button onclick="filterCourses('all')">All Courses</button>
+      <button onclick="filterCourses('wdd')">WDD Courses</button>
+      <button onclick="filterCourses('cse')">CSE Courses</button>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Thandile Mayekiso, South Africa</p>
+    <p>&copy; <span id="year"></span> Thandile Mayekiso | South Africa</p>
     <p id="lastModified"></p>
   </footer>
 </body>
-</html>
 
+</html>
