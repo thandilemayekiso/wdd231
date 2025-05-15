@@ -1,0 +1,80 @@
+wdd231/
+├── index.html
+├── styles/
+│   ├── normalize.css (optional)
+│   ├── small.css
+│   └── large.css
+├── scripts/
+│   ├── navigation.js
+│   ├── date.js
+│   └── course.js
+└── images/
+    ├── profile.jpg
+    ├── mdroad-compressed.jpeg
+    ├── highway.jpeg
+    └── download.jpeg
+✅ HTML Requirements
+ Semantic HTML (header, nav, main, footer)
+
+ Meta tags for description & author
+
+ Google Fonts loaded (Montserrat, Open Sans)
+
+ Navigation with 5 working links
+
+ <header> includes small image + <span> with name
+
+ <main> with 3 <section> elements
+
+ <footer> with:
+
+Dynamic copyright
+
+lastModified via JavaScript
+
+✅ CSS Requirements
+ small.css includes mobile layout and styling
+
+ large.css includes media queries and desktop layout
+
+ Responsive Flexbox navigation
+
+ Hover effects & wayfinding for nav
+
+ Good spacing, contrast, and typography
+
+ Images are responsive, optimized under 125KB
+
+ No horizontal scroll between 320px–1200px
+
+✅ JavaScript Requirements
+ navigation.js toggles responsive menu
+
+ date.js populates current year and last modified
+
+ course.js:
+
+Renders array of course cards
+
+Filters (All / WDD / CSE)
+
+Shows total credits using .reduce()
+
+Styles completed vs. incomplete courses differently
+
+✅ DevTools Lighthouse Audit
+Mobile View Audit Score:
+
+✅ Accessibility: 95+
+
+✅ Best Practices: 95+
+
+✅ SEO: 95+
+
+Desktop View Audit Score:
+
+✅ Accessibility: 95+
+
+✅ Best Practices: 95+
+
+✅ SEO: 95+
