@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WDD 231 Course Home Page - Thandile Mayekiso">
-  <meta name="author" content="Thandile Mayekiso">
-  <title>WDD 231 | Thandile Mayekiso</title>
-
-  <!-- Fonts and Styles -->
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/large.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-
-  <!-- Scripts -->
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/date.js" defer></script>
-  <script src="scripts/course.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 231 Home Page - Thandile Mayekiso" />
+  <meta name="author" content="Thandile Mayekiso" />
+  <title>Home | WDD 231</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/large.css" />
+  <script src="js/navigation.js" defer></script>
+  <script src="js/date.js" defer></script>
+  <script src="js/course.js" defer></script>
+  
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Thandile Mayekiso" width="50">
+    <img src="images/Thandile.jpg" alt="Your photo" />
     <span>Thandile Mayekiso</span>
-    <nav>
-      <button id="menu">☰</button>
-      <ul class="navigation">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
-        <li><a href="final/index.html">Final</a></li>
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
-        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <nav>
+    <button id="menu">&#9776;</button>
+    <ul id="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+      <li><a href="https://github.com/YOUR_USERNAME">GitHub Profile</a></li>
+      <li><a href="https://www.linkedin.com/in/thandile-mayekiso-4804971b9">LinkedIn</a></li>
+    </ul>
+  </nav>
 
   <main>
     <h1>Home</h1>
 
     <section>
-      <h2>Mdantsane Highway</h2>
-      <img src="images/mdroad-compressed.jpeg" alt="Mdantsane highway view" width="100%">
-      <p>This recently developed highway reflects progress and better transportation links for Mdantsane residents.</p>
+      <h2>Welcome to WDD 231</h2>
+      <p>This is the course homepage for Web Frontend Development II.</p>
     </section>
 
     <section>
-      <h2>Taxi Rank and Market</h2>
-      <img src="images/highway.jpeg" alt="Mdantsane taxi rank and informal market" width="100%">
-      <p>The heart of local commerce—this area supports dozens of small vendors and commuters daily.</p>
+      <h2>My Progress</h2>
+      <div id="course-list"></div>
+      <div id="buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+      <p>Total Credits: <span id="total-credits">0</span></p>
     </section>
 
     <section>
-      <h2>Mdantsane City Mall</h2>
-      <img src="images/download.jpeg" alt="Mdantsane City Mall Entrance" width="100%">
-      <p>The Mdantsane City Mall is a shopping and social hub that brings modern retail experiences to the township.</p>
+      <h2>Resources</h2>
+      <p>Useful links and resources will be listed here.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Thandile Mayekiso | South Africa</p>
+    <p>&copy; <span id="year"></span> Thandile Mayekiso, South Africa</p>
     <p id="lastModified"></p>
   </footer>
 </body>
 </html>
+
