@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Woolworths South Africa",
+      "address": "93 Longmarket St, Cape Town, 8001",
+      "phone": "021 407 7700",
+      "website": "https://www.woolworths.co.za",
+      "image": "images/woolworths.png",
+      "membershipLevel": 3,
+      "description": "Retail giant offering clothing, food, and homeware.",
+      "founded": 1931,
+      "industry": "Retail"
+    },
+    {
+      "name": "Capitec Bank",
+      "address": "5 Neutron Rd, Techno Park, Stellenbosch, 7600",
+      "phone": "0860 10 20 43",
+      "website": "https://www.capitecbank.co.za",
+      "image": "images/capitec.png",
+      "membershipLevel": 3,
+      "description": "One of South Africa’s leading retail banks.",
+      "founded": 2001,
+      "industry": "Finance"
+    },
+    {
+      "name": "Checkers Hyper",
+      "address": "Shop 15, Bayside Mall, Table View, Cape Town",
+      "phone": "0800 01 07 09",
+      "website": "https://www.checkers.co.za",
+      "image": "images/checkers.png",
+      "membershipLevel": 2,
+      "description": "Grocery and household goods retailer.",
+      "founded": 1956,
+      "industry": "Retail"
+    },
+    {
+      "name": "Netcare Hospitals",
+      "address": "76 Maude St, Sandton, Johannesburg, 2196",
+      "phone": "011 301 0000",
+      "website": "https://www.netcare.co.za",
+      "image": "images/netcare.png",
+      "membershipLevel": 2,
+      "description": "Private healthcare provider with national coverage.",
+      "founded": 1996,
+      "industry": "Healthcare"
+    },
+    {
+      "name": "Discovery Limited",
+      "address": "1 Discovery Pl, Sandhurst, Sandton, Johannesburg",
+      "phone": "0860 99 88 77",
+      "website": "https://www.discovery.co.za",
+      "image": "images/discovery.png",
+      "membershipLevel": 3,
+      "description": "Offers health insurance and investment services.",
+      "founded": 1992,
+      "industry": "Insurance & Finance"
+    },
+    {
+      "name": "Nando's South Africa",
+      "address": "Nando’s Central Kitchen, Lorentzville, Johannesburg",
+      "phone": "0860 113 332",
+      "website": "https://www.nandos.co.za",
+      "image": "images/nandos.jpg",
+      "membershipLevel": 1,
+      "description": "International restaurant chain specializing in peri-peri chicken.",
+      "founded": 1987,
+      "industry": "Food & Hospitality"
+    },
+    {
+      "name": "MTN Group",
+      "address": "216 14th Avenue, Fairland, Johannesburg, 2195",
+      "phone": "083 135",
+      "website": "https://www.mtn.co.za",
+      "image": "images/mtn.png",
+      "membershipLevel": 2,
+      "description": "Telecommunications provider with services across Africa.",
+      "founded": 1994,
+      "industry": "Telecommunications"
+    }
+  ]
+}
