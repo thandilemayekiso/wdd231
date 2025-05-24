@@ -66,6 +66,7 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+
 .card h3 {
   margin-top: 0;
 }
@@ -76,6 +77,23 @@ main {
   display: block;
   margin-bottom: 0.5rem;
 }
+
+#hero {
+  position: relative;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  height: 300px;
+}
+.cta {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #007acc;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 
 footer {
   background: var(--accent);

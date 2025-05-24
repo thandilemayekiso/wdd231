@@ -77,5 +77,25 @@
       "founded": 1994,
       "industry": "Telecommunications"
     }
-  ]
+  ,
+    {
+      "name": "Mdantsane Bakery",
+      "image": "images/member-logos/bakery.png",
+      "address": "123 Main Street, Mdantsane",
+      "phone": "+27 43 123 4567",
+      "website": "http://mdantsanebakery.co.za",
+      "membership": "Gold"
+    },
+    {
+      "name": "Eastern Cape Tech",
+      "image": "images/member-logos/tech.png",
+      "address": "456 Tech Avenue, Mdantsane",
+      "phone": "+27 43 765 4321",
+      "website": "http://easterncapetech.co.za",
+      "membership": "Silver"
+    }
+  ],
+  "version": "1.0",
+  "lastUpdated": "2023-10-01"
 }
+
