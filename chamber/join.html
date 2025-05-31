@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the Mdantsane Chamber of Commerce" />
+  <title>Join Chamber</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <script defer src="scripts/join.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Join the Mdantsane Chamber</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html" class="active">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="thankyou.html" method="get">
+      <label>First Name
+        <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
+      </label>
+
+      <label>Last Name
+        <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
+      </label>
+
+      <label>Organization Title
+        <input type="text" name="orgtitle" pattern="[A-Za-z\-\s]{7,}" title="Minimum 7 letters, hyphens, and spaces only" autocomplete="organization-title">
+      </label>
+
+      <label>Email
+        <input type="email" name="email" required placeholder="example@domain.com" title="Enter a valid email address" autocomplete="email">
+      </label>
+
+      <label>Mobile Number
+        <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel">
+      </label>
+
+      <label>Organization Name
+        <input type="text" name="orgname" required title="Enter business name" autocomplete="organization">
+      </label>
+
+      <label>Membership Level
+        <select name="membership">
+          <option value="NP">NP - Non-Profit</option>
+          <option value="Bronze">Bronze</option>
+          <option value="Silver">Silver</option>
+          <option value="Gold">Gold</option>
+        </select>
+      </label>
+
+      <label>Business Description
+        <textarea name="description" title="Describe your organization"></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <input type="submit" value="Join Now">
+    </form>
+
+    <section class="membership-cards">
+      <div class="card" id="npCard">
+        <h3>NP Membership</h3>
+        <a href="#npModal">Learn More</a>
+      </div>
+      <div class="card" id="bronzeCard">
+        <h3>Bronze Membership</h3>
+        <a href="#bronzeModal">Learn More</a>
+      </div>
+      <div class="card" id="silverCard">
+        <h3>Silver Membership</h3>
+        <a href="#silverModal">Learn More</a>
+      </div>
+      <div class="card" id="goldCard">
+        <h3>Gold Membership</h3>
+        <a href="#goldModal">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <dialog id="npModal">
+      <p>Free membership for non-profit organizations. Includes basic directory listing.</p>
+      <button onclick="document.getElementById('npModal').close()">Close</button>
+    </dialog>
+    <dialog id="bronzeModal">
+      <p>Bronze membership includes training access and business networking events.</p>
+      <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+    </dialog>
+    <dialog id="silverModal">
+      <p>Silver includes spotlight advertising and event discounts.</p>
+      <button onclick="document.getElementById('silverModal').close()">Close</button>
+    </dialog>
+    <dialog id="goldModal">
+      <p>Gold membership includes all benefits: top directory, media coverage, and sponsorships.</p>
+      <button onclick="document.getElementById('goldModal').close()">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Mdantsane Chamber | WDD 231</p>
+  </footer>
+
+  <script>
+    document.getElementById("timestamp").value = new Date().toISOString();
+
+    document.querySelectorAll(".membership-cards a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).showModal();
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
