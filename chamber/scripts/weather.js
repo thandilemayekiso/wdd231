@@ -1,30 +1,27 @@
-const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
-const lat = -32.9460;
-const lon = 27.7256;
-const weatherContainer = document.getElementById('weather');
+const apiKey = "0c2bfad03dc4020c162e9c28730cdf45";
+const lat = -32.9323;
+const lon = 27.7426;
 
-fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=metric&appid=${apiKey}`)
-  .then(response => response.json())
-  .then(data => {
-    const current = data.current;
-    const daily = data.daily.slice(1, 4); // Next 3 days
+async function getWeather() {
+  try {
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=metric&appid=${apiKey}`);
+    if (!response.ok) throw new Error("Weather fetch failed");
+    const data = await response.json();
 
-    weatherContainer.innerHTML = `
-      <h3>Current Weather</h3>
-      <p>Temperature: ${current.temp}°C</p>
-      <p>Conditions: ${current.weather[0].description}</p>
-      <h3>3-Day Forecast</h3>
-      <ul>
-        ${daily.map(day => `
-          <li>
-            <strong>${new Date(day.dt * 1000).toLocaleDateString()}</strong>: 
-            ${day.temp.day}°C, ${day.weather[0].description}
-          </li>
-        `).join('')}
-      </ul>
-    `;
-  })
-  .catch(error => {
-    console.error('Error fetching weather data:', error);
-    weatherContainer.innerHTML = '<p>Unable to load weather data at this time.</p>';
-  });
+    document.getElementById("current-temp").innerText =
+      `Current Temp: ${data.current.temp.toFixed(1)}°C - ${data.current.weather[0].description}`;
+
+    const forecastDiv = document.getElementById("forecast");
+    forecastDiv.innerHTML = "<h3>3-Day Forecast</h3><ul>";
+    data.daily.slice(1, 4).forEach(day => {
+      const date = new Date(day.dt * 1000).toLocaleDateString("en-US", { weekday: "long" });
+      forecastDiv.innerHTML += `<li>${date}: ${day.temp.day.toFixed(1)}°C - ${day.weather[0].description}</li>`;
+    });
+    forecastDiv.innerHTML += "</ul>";
+  } catch (error) {
+    document.getElementById("weather").innerHTML = `<p>Error loading weather: ${error.message}</p>`;
+  }
+}
+
+getWeather();
+

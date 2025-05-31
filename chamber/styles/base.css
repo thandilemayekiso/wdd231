@@ -83,6 +83,7 @@ main {
   background: url("../images/hero.jpg") center/cover no-repeat;
   height: 300px;
 }
+
 .cta {
   position: absolute;
   bottom: 20px;

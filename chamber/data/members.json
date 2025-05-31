@@ -66,34 +66,40 @@
       "founded": 1987,
       "industry": "Food & Hospitality"
     },
-    {
-      "name": "MTN Group",
-      "address": "216 14th Avenue, Fairland, Johannesburg, 2195",
-      "phone": "083 135",
-      "website": "https://www.mtn.co.za",
-      "image": "images/mtn.png",
-      "membershipLevel": 2,
-      "description": "Telecommunications provider with services across Africa.",
-      "founded": 1994,
-      "industry": "Telecommunications"
-    }
-  ,
-    {
-      "name": "Mdantsane Bakery",
-      "image": "images/member-logos/bakery.png",
-      "address": "123 Main Street, Mdantsane",
-      "phone": "+27 43 123 4567",
-      "website": "http://mdantsanebakery.co.za",
-      "membership": "Gold"
-    },
-    {
-      "name": "Eastern Cape Tech",
-      "image": "images/member-logos/tech.png",
-      "address": "456 Tech Avenue, Mdantsane",
-      "phone": "+27 43 765 4321",
-      "website": "http://easterncapetech.co.za",
-      "membership": "Silver"
-    }
+{
+  "name": "MTN Group",
+  "address": "216 14th Avenue, Fairland, Johannesburg, 2195",
+  "phone": "083 135",
+  "website": "https://www.mtn.co.za",
+  "image": "images/mtn.png",
+  "membershipLevel": 2,
+  "description": "Telecommunications provider with services across Africa.",
+  "founded": 1994,
+  "industry": "Telecommunications"
+},
+{
+  "name": "Builders Warehouse Mdantsane",
+  "image": "images/builders.jpg",
+  "address": "Zone 3, Mdantsane, East London",
+  "phone": "+27 43 708 6000",
+  "website": "https://www.builders.co.za",
+  "membershipLevel": 3,
+  "description": "Hardware and building materials supplier.",
+  "founded": 2000,
+  "industry": "Retail"
+},
+{
+  "name": "Build It Mdantsane",
+  "image": "images/buildit.jpg",
+  "address": "Zone 4, Mdantsane, East London",
+  "phone": "+27 43 761 7700",
+  "website": "https://www.buildit.co.za",
+  "membershipLevel": 2,
+  "description": "Supplier of building materials and hardware.",
+  "founded": 1984,
+  "industry": "Retail"
+}
+
   ],
   "version": "1.0",
   "lastUpdated": "2023-10-01"

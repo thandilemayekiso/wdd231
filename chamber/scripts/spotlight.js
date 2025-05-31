@@ -12,19 +12,23 @@ fetch('data/members.json')
     }
 
     const spotlightContainer = document.getElementById('spotlights');
-    spotlights.forEach(member => {
-      const card = document.createElement('div');
-      card.classList.add('spotlight-card');
-      card.innerHTML = `
-        <img src="${member.image}" alt="${member.name} Logo">
-        <h4>${member.name}</h4>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
-        <p>Membership Level: ${member.membership}</p>
-      `;
-      spotlightContainer.appendChild(card);
-    });
+    if (spotlightContainer) {
+      spotlights.forEach(member => {
+        const card = document.createElement('div');
+        card.classList.add('spotlight-card');
+        card.innerHTML = `
+          <img src="${member.image || 'images/default.png'}" alt="${member.name || 'No Name'} Logo">
+          <h4>${member.name || 'No Name'}</h4>
+          <p>${member.address || 'No Address Provided'}</p>
+          <p>${member.phone || 'No Phone Provided'}</p>
+          <a href="${member.website || '#'}" target="_blank">Visit Website</a>
+          <p>Membership Level: ${member.membership || 'N/A'}</p>
+        `;
+        spotlightContainer.appendChild(card);
+      });
+    } else {
+      console.error('Spotlights container not found in the DOM.');
+    }
   })
   .catch(error => {
     console.error('Error loading member data:', error);

@@ -11,11 +11,14 @@ async function getMembers() {
     const data = await response.json();
     displayMembers(data.members);
   } catch (error) {
-    directoryContainer.innerHTML = `<p>Error loading members: ${error.message}</p>`;
+    if (directoryContainer) {
+      directoryContainer.innerHTML = `<p>Error loading members: ${error.message}</p>`;
+    }
   }
 }
 
 function displayMembers(members) {
+  if (!directoryContainer) return;
   directoryContainer.innerHTML = "";
 
   members.forEach(member => {
@@ -34,28 +37,43 @@ function displayMembers(members) {
   });
 }
 
-gridBtn.addEventListener("click", () => {
-  directoryContainer.classList.add("grid");
-  directoryContainer.classList.remove("list");
-});
+if (gridBtn && directoryContainer) {
+  gridBtn.addEventListener("click", () => {
+    directoryContainer.classList.add("grid");
+    directoryContainer.classList.remove("list");
+  });
+}
 
-listBtn.addEventListener("click", () => {
-  directoryContainer.classList.add("list");
-  directoryContainer.classList.remove("grid");
-});
+if (listBtn && directoryContainer) {
+  listBtn.addEventListener("click", () => {
+    directoryContainer.classList.add("list");
+    directoryContainer.classList.remove("grid");
+  });
+}
 
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+const yearElem = document.getElementById("year");
+if (yearElem) {
+  yearElem.textContent = new Date().getFullYear();
+}
+const lastModifiedElem = document.getElementById("lastModified");
+if (lastModifiedElem) {
+  lastModifiedElem.textContent = document.lastModified;
+}
 
 getMembers();
 // Add event listener for menu button
-document.getElementById("menuBtn").
-    addEventListener("click", () => {
-        document.getElementById("navList").classList.toggle("show");
-    });
+const menuBtn = document.getElementById("menuBtn");
+const navList = document.getElementById("navList");
+if (menuBtn && navList) {
+  menuBtn.addEventListener("click", () => {
+    navList.classList.toggle("show");
+  });
+}
 // Add event listener for close button
-document.getElementById("closeBtn").
-    addEventListener("click", () => {
-        document.getElementById("navList").classList.remove("show");
-    });
+const closeBtn = document.getElementById("closeBtn");
+if (closeBtn && navList) {
+  closeBtn.addEventListener("click", () => {
+    navList.classList.remove("show");
+  });
+}
     

@@ -19,23 +19,28 @@ async function getWeather() {
     const data = await res.json();
 
     const current = data.current;
-    document.getElementById("current-temp").innerHTML = 
-      `Current Temp: ${current.temp.toFixed(1)}°C - ${current.weather[0].description}`;
+    const currentTempDiv = document.getElementById("current-temp");
+    if (currentTempDiv) {
+      currentTempDiv.innerHTML = 
+        `Current Temp: ${current.temp.toFixed(1)}°C - ${current.weather[0].description}`;
+    }
 
     const forecastDiv = document.getElementById("forecast");
-    forecastDiv.innerHTML = "<h3>3-Day Forecast</h3><ul>";
+    if (forecastDiv) {
+      forecastDiv.innerHTML = "<h3>3-Day Forecast</h3><ul>";
 
-    // Next 3 days forecast (skip day 0 which is today)
-    data.daily.slice(1, 4).forEach(day => {
-      const dayName = new Date(day.dt * 1000).toLocaleDateString("en-US", { weekday: "short" });
-      forecastDiv.innerHTML += `
-        <li>
-          <strong>${dayName}</strong>: ${day.temp.day.toFixed(1)}°C, ${day.weather[0].description}
-        </li>
-      `;
-    });
+      // Next 3 days forecast (skip day 0 which is today)
+      data.daily.slice(1, 4).forEach(day => {
+        const dayName = new Date(day.dt * 1000).toLocaleDateString("en-US", { weekday: "short" });
+        forecastDiv.innerHTML += `
+          <li>
+            <strong>${dayName}</strong>: ${day.temp.day.toFixed(1)}°C, ${day.weather[0].description}
+          </li>
+        `;
+      });
 
-    forecastDiv.innerHTML += "</ul>";
+      forecastDiv.innerHTML += "</ul>";
+    }
 
   } catch (error) {
     weatherSection.innerHTML = `<p>Error loading weather: ${error.message}</p>`;
