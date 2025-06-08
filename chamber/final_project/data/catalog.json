@@ -1,0 +1,129 @@
+[
+  { "id": 1,
+    "name": "White Plastic Chairs",
+    "price": 10,
+    "category": "Seating",
+    "description": "Durable white plastic chairs perfect for weddings, funerals, and parties.",
+    "image": "images/whitechairs.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Fancy Chairs",
+    "price": 25,
+    "category": "Seating",
+    "description": "Elegant chairs for formal events such as weddings or corporate functions.",
+    "image": "images/fancy_chairs.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Folding Tables",
+    "price": 50,
+    "category": "Tables",
+    "description": "Sturdy folding tables suitable for food service or guest seating.",
+    "image": "images/folding_tables.webp"
+  },
+  {
+    "id": 4,
+    "name": "Small Tent",
+    "price": 500,
+    "category": "Shelter",
+    "description": "Compact tent ideal for backyard or small community events.",
+    "image": "images/small_tent.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Large Tent",
+    "price": 1200,
+    "category": "Shelter",
+    "description": "Spacious tent to accommodate large crowds for events like weddings or concerts.",
+    "image": "images/large_tent.avif"
+  },
+  {
+    "id": 6,
+    "name": "Mobile Toilet",
+    "price": 300,
+    "category": "Facilities",
+    "description": "Clean and hygienic mobile toilets for any outdoor event.",
+    "image": "images/vip_toilets.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Mobile Fridge",
+    "price": 400,
+    "category": "Facilities",
+    "description": "Portable refrigeration for catering, drinks, and perishables.",
+    "image": "images/mobile_fridge.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Gas Stove",
+    "price": 150,
+    "category": "Cooking Equipment",
+    "description": "Gas stoves for cooking or heating food during your event.",
+    "image": "images/gas_stove.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Gas Cylinders",
+    "price": 100,
+    "category": "Cooking Equipment",
+    "description": "Refillable gas cylinders compatible with stoves and heaters.",
+    "image": "images/gas_cylinders.webp"
+  },
+  {
+    "id": 10,
+    "name": "Event Planning",
+    "price": 2000,
+    "category": "Services",
+    "description": "Full event planning services including logistics, décor, and coordination.",
+    "image": "images/event_planning.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Security Services",
+    "price": 500,
+    "category": "Services",
+    "description": "Professional security to ensure safety and order at your event.",
+    "image": "images/security.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Generator",
+    "price": 600,
+    "category": "Power",
+    "description": "Reliable generators to provide electricity in outdoor or off-grid locations.",
+    "image": "images/generator.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Catering",
+    "price": 1500,
+    "category": "Services",
+    "description": "Catering services with a variety of menu options to suit all events.",
+    "image": "images/catering.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Event Decoration",
+    "price": 800,
+    "category": "Decor",
+    "description": "Decorations tailored to your theme, from traditional to modern styles.",
+    "image": "images/decor.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Lighting Equipment",
+    "price": 300,
+    "category": "Sound & Lighting",
+    "description": "Lighting solutions for ambiance, stage presence, or security.",
+    "image": "images/lighting.webp"
+  },
+  {
+    "id": 16,
+    "name": "Sound Equipment",
+    "price": 700,
+    "category": "Sound & Lighting",
+    "description": "Microphones, speakers, and PA systems for announcements and entertainment.",
+    "image": "images/sound.jpg"
+  }
+]

@@ -1,0 +1,182 @@
+:root {
+  --primary-color: #1e3a8a;
+  --accent-color: #facc15;
+  --text-color: #1e293b;
+  --bg-color: #ffffff;
+  --font-main: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: var(--accent-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Booking and Support Forms */
+.booking-form,
+.support-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking-form label,
+.support-form label {
+  font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea,
+.support-form input,
+.support-form select,
+.support-form textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.booking-form button,
+.support-form button {
+  align-self: flex-start;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking-form button:hover,
+.support-form button:hover {
+  background-color: #374fc1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Confirmation Section */
+#bookingConfirmation {
+  background: #e7f5e6;
+  border: 1px solid #a3d3a1;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.community-support {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+/* Catalog Styles */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.catalog-card,
+.catalog-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.catalog-card img,
+.catalog-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.catalog-card h3,
+.catalog-item h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.catalog-card .price,
+.catalog-item .price {
+  font-weight: bold;
+  color: #1a8a3c;
+}
+
+.book-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #004080;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #0066cc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .booking-form,
+  .support-form {
+    padding: 0 1rem;
+  }
+}

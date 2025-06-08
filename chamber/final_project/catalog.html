@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipment Catalog | Mdantsane Events</title>
+  <meta name="description" content="Explore our wide range of event equipment available for rental in Mdantsane." />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <script type="module" src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/catalog.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Mdantsane Events</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html" class="active">Catalog</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="video-demo.html">Video Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Explore Our Equipment Catalog</h2>
+      <p>Find the perfect equipment for your event in Mdantsane.</p>
+    </section>
+
+    <section class="filter-bar">
+      <label for="category-filter">Filter by Category:</label>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="event">Event Services</option>
+        <option value="equipment">Equipment</option>
+        <option value="furniture">Furniture</option>
+      </select>
+    </section>
+     <section id="catalog-container" class="catalog-grid">
+    <!-- Catalog cards will be inserted here -->
+     
+  </section>
+
+    <section class="catalog-section">
+      <h2>Our Equipment Catalog</h2>
+      <div id="catalog-container" class="catalog-grid">
+        <!-- JavaScript dynamically populates this -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mdantsane Events | Designed by Thandile Mayekiso</p>
+  </footer>
+</body>
+
+</html>
+
+

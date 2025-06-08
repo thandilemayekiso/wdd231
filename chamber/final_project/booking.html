@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book your desired event equipment from our inventory." />
+  <meta name="author" content="Thandile Mayekiso" />
+  <title>Booking | Mdantsane Event Hire</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>Mdantsane Event Hire</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Reserve Your Event Equipment</h2>
+      <p>Book your desired equipment from our inventory. Fill out the form below to get started.</p>
+    </section>
+
+    <section aria-labelledby="reservation-heading">
+      <h2 id="reservation-heading">Reserve Equipment</h2>
+      <form id="bookingForm" action="thankyou.html" method="get" class="booking-form">
+        <fieldset>
+          <legend>Booking Details</legend>
+
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required aria-required="true">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required aria-required="true">
+
+          <label for="equipment">Select Equipment:</label>
+          <select id="equipment" name="equipment" required aria-required="true">
+            <option value="">-- Select an item --</option>
+            <option value="White Chairs">White Chairs</option>
+            <option value="Fancy Chairs">Fancy Chairs</option>
+            <option value="Folding Tables">Folding Tables</option>
+            <option value="Small Tent">Small Tent</option>
+            <option value="Large Tent">Large Tent</option>
+            <option value="Mobile Toilet">Mobile Toilet</option>
+            <option value="Mobile Fridge">Mobile Fridge</option>
+            <option value="Gas Stove">Gas Stove</option>
+            <option value="Gas Cylinders">Gas Cylinders</option>
+            <option value="Lighting Equipment">Lighting Equipment</option>
+            <option value="Sound Equipment">Sound Equipment</option>
+            <option value="Event Decoration">Event Decoration</option>
+            <option value="Catering Services">Catering Services</option>
+            <option value="Security Services">Security Services</option>
+            <option value="Generator">Generator</option>
+            <option value="Event Planning">Event Planning</option>
+          </select>
+
+          <label for="date">Event Date:</label>
+          <input type="date" id="date" name="date" required aria-required="true">
+
+          <button type="submit">Submit Booking</button>
+        </fieldset>
+      </form>
+
+      <div id="bookingConfirmation" class="hidden" aria-live="polite">
+        <h3>Thank you for your booking!</h3>
+        <p id="bookingSummary"></p>
+      </div>
+    </section>
+
+    <section id="support" class="community-support" aria-labelledby="support-heading">
+      <h2 id="support-heading">Support Our Community</h2>
+      <p>Want to make a difference? Use this form to donate equipment, sponsor an event, or support our youth and community outreach programs. Your support goes directly to local schools, churches, and families in Mdantsane.</p>
+
+      <form action="thankyou.html" method="get" class="support-form">
+        <fieldset>
+          <legend>Community Support Form</legend>
+
+          <label for="supportName">Full Name:</label>
+          <input type="text" id="supportName" name="fullname" required>
+
+          <label for="supportEmail">Email Address:</label>
+          <input type="email" id="supportEmail" name="email" required>
+
+          <label for="supportType">How would you like to support?</label>
+          <select id="supportType" name="supportType" required>
+            <option value="">-- Please choose an option --</option>
+            <option value="donation">Donate Equipment</option>
+            <option value="sponsorship">Sponsor an Event</option>
+            <option value="discount">Offer Discounted Services</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="message">Additional Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us more about how you’d like to help..."></textarea>
+
+          <button type="submit">Submit Support</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mdantsane Event Hire | Designed by Thandile Mayekiso</p>
+    <p><a href="https://youtu.be/YOUR_DEMO_VIDEO" target="_blank">Project Demo Video</a></p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
+
