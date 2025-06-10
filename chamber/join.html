@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Join the Mdantsane Chamber of Commerce" />
-  <title>Join Chamber</title>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <script defer src="scripts/join.js"></script>
+  <title>Join Chamber | Mdantsane Chamber</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+  <script src="scripts/join.js" defer></script>
 </head>
 <body>
   <header>
@@ -47,7 +48,8 @@
       </label>
 
       <label>Membership Level
-        <select name="membership">
+        <select name="membership" required>
+          <option value="">--Select Membership--</option>
           <option value="NP">NP - Non-Profit</option>
           <option value="Bronze">Bronze</option>
           <option value="Silver">Silver</option>
@@ -56,28 +58,27 @@
       </label>
 
       <label>Business Description
-        <textarea name="description" title="Describe your organization"></textarea>
+        <textarea name="description" rows="4" title="Describe your organization"></textarea>
       </label>
 
-      <input type="hidden" id="timestamp" name="timestamp">
-
+      <input type="hidden" id="timestamp" name="timestamp" />
       <input type="submit" value="Join Now">
     </form>
 
     <section class="membership-cards">
-      <div class="card" id="npCard">
+      <div class="card">
         <h3>NP Membership</h3>
         <a href="#npModal">Learn More</a>
       </div>
-      <div class="card" id="bronzeCard">
+      <div class="card">
         <h3>Bronze Membership</h3>
         <a href="#bronzeModal">Learn More</a>
       </div>
-      <div class="card" id="silverCard">
+      <div class="card">
         <h3>Silver Membership</h3>
         <a href="#silverModal">Learn More</a>
       </div>
-      <div class="card" id="goldCard">
+      <div class="card">
         <h3>Gold Membership</h3>
         <a href="#goldModal">Learn More</a>
       </div>
@@ -105,18 +106,5 @@
   <footer>
     <p>&copy; <span id="year"></span> | Mdantsane Chamber | WDD 231</p>
   </footer>
-
-  <script>
-    document.getElementById("timestamp").value = new Date().toISOString();
-
-    document.querySelectorAll(".membership-cards a").forEach(link => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).showModal();
-      });
-    });
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
