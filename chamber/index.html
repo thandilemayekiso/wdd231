@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mdantsane Chamber of Commerce</title>
-  <meta name="description" content="Empowering Mdantsane's business community">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="js/home.js" defer></script>
-  <script src="js/weather.js" defer></script>
+  <meta name="description" content="Empowering Mdantsane's business community" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/home.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <script src="scripts/weather.js" defer></script>
   <script src="scripts/spotlight.js" defer></script>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="scripts/home.js" defer></script>
 </head>
 <body>
   <header>
@@ -30,39 +31,62 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="hero-section">
       <div class="hero-overlay">
         <h1>Empowering Mdantsane’s Business Community</h1>
         <a href="join.html" class="cta">Join Us Today</a>
       </div>
     </section>
 
-    <!-- Current Events Section -->
-    <section id="events" class="container">
+    <section id="events" class="container fade">
       <h2>Upcoming Events</h2>
       <ul>
-        <li>Small Business Meetup – May 30</li>
-        <li>Chamber Annual Gala – June 12</li>
-        <li>Networking Workshop – July 8</li>
+        <li><strong>May 30:</strong> Small Business Meetup</li>
+        <li><strong>June 12:</strong> Chamber Annual Gala</li>
+        <li><strong>July 8:</strong> Networking Workshop</li>
       </ul>
     </section>
 
-    <!-- Weather Section -->
-    <section id="weather-section">
-  <div id="weather">
-    <p id="current-temp">Loading weather...</p>
-    <div id="forecast"></div>
-  </div>
+    <section id="weather-section" class="container fade">
+      <h2>Current Weather</h2>
+      <div id="weather">
+        <p><strong>Temperature:</strong> <span id="current-temp">Loading...</span></p>
+        <p><strong>Conditions:</strong> <span id="weather-desc">Loading...</span></p>
+        <div id="forecast">
+          <h3>3-Day Forecast</h3>
+          <ul id="forecast-list"></ul>
+        </div>
+      </div>
+    </section>
 
-    <!-- Spotlight Section -->
-    <section id="spotlight" class="container">
+    <section id="history" class="container fade">
+      <h2>Our History</h2>
+      <p>
+        Mdantsane, the second-largest township in South Africa, is not just a home to vibrant culture and resilient people—it's a growing hub of entrepreneurial energy. Founded in the 1960s, Mdantsane has transformed into a thriving urban township with diverse industries.
+      </p>
+      <p>
+        The Mdantsane Chamber of Commerce was established to nurture this spirit. We work to support local businesses, drive innovation, and connect entrepreneurs with opportunities. Today, we’re proud to be a voice for over 300 local businesses and counting.
+      </p>
+    </section>
+
+    <section id="photos" class="container fade">
+      <h2>Scenes from Mdantsane</h2>
+      <div class="images-row">
+        <div>
+          <img src="images/mdantsane_home.jpg" alt="View of Mdantsane homes and community life" />
+          <p style="text-align:center;"><em>Life in Mdantsane</em></p>
+        </div>
+        <div>
+          <img src="images/highway.jpeg" alt="Mdantsane Highway business street" />
+          <p style="text-align:center;"><em>Highway: Mdantsane’s Business Artery</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="spotlight" class="container fade">
       <h2>Featured Members</h2>
       <div id="spotlightContainer" class="grid"></div>
     </section>
-   
-</section>
-
   </main>
 
   <footer>
@@ -71,7 +95,5 @@
       <p>© 2025 Mdantsane Chamber. All rights reserved.</p>
     </div>
   </footer>
-
-  <script src="js/home.js" defer></script>
 </body>
 </html>

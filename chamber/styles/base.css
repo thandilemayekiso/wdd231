@@ -41,6 +41,24 @@ nav a.active {
 main {
   padding: 1rem;
 }
+main {
+  display: grid;
+  grid-template-areas: 
+    "hero"
+    "events"
+    "weather"
+    "spotlight";
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-areas:
+      "hero hero"
+      "events weather"
+      "spotlight spotlight";
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .grid {
   display: grid;
