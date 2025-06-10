@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Discover Page - Mdantsane Chamber of Commerce" />
+  <meta name="author" content="Thandile Mayekiso" />
+  <title>Discover | Mdantsane Chamber</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+ <script src="scripts/discover.js"></script>
+ 
+
+  <link rel="stylesheet" href="styles/medium.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Mdantsane Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <main id="discover-cards" class="grid"></main>
+    <h2>Discover Mdantsane & East London</h2>
+
+    <!-- Sidebar Visit Message -->
+    <aside id="visit-message" class="visit-sidebar"></aside>
+
+    <!-- Cards container -->
+    <section id="discover-cards" class="grid-container">
+      <!-- JavaScript will populate 8 cards here -->
+    </section>
+    <div class="card">
+  <h2>Hemingways Mall</h2>
+  <figure>
+    <img src="images/hemingways.webp" alt="Hemingways Mall">
+  </figure>
+  <address>Cnr Western Ave & Two Rivers Dr, Cambridge Village, East London</address>
+  <p>Hemingways Mall offers a wide variety of shopping, dining, and entertainment options...</p>
+  <button onclick="location.href='#'">Learn More</button>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mdantsane Chamber | Thandile Mayekiso | WDD 231 Project</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</body>
+</html>

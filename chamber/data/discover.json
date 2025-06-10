@@ -1,0 +1,60 @@
+{
+  "points": [
+    {
+      "title": "Hemingways Mall",
+      "image": "images/hemingways.jpg",
+      "address": "Cnr Western Ave & Two Rivers Dr, Cambridge Village, East London",
+      "description": "Hemingways Mall offers a wide variety of shopping, dining, and entertainment options including cinemas, restaurants, and major retail outlets.",
+      "link": "https://www.hemingwaysmall.co.za"
+    },
+    {
+      "title": "Mdantsane City Mall",
+      "image": "images/mdantsane.jpg",
+      "address": "Errol Spring Ave, Mdantsane Unit 2, East London",
+      "description": "A central shopping destination in Mdantsane with grocery stores, fashion outlets, and essential services.",
+      "link": "https://www.mdantsanecity.co.za"
+    },
+    {
+      "title": "East London Museum",
+      "image": "images/museum.jpg",
+      "address": "319 Oxford St, Southernwood, East London",
+      "description": "Famous for its coelacanth exhibit, the museum showcases the rich natural and cultural history of the Eastern Cape.",
+      "link": "https://www.eastlondonmuseum.co.za"
+    },
+    {
+      "title": "Nahoon Beach",
+      "image": "images/nahoon.jpg",
+      "address": "Nahoon, East London",
+      "description": "A popular beach for surfing, swimming, and long scenic walks, ideal for families and nature lovers.",
+      "link": "https://www.southafrica.com/attractions/nahoon-beach-east-london/"
+    },
+    {
+      "title": "Mdantsane Boxing Academy",
+      "image": "images/boxing.png",
+      "address": "Mdantsane Unit P, East London",
+      "description": "Training ground for many of South Africa's top boxing champions, promoting youth development and sportsmanship.",
+      "link": "https://www.mdantsaneboxingacademy.co.za"
+    },
+    {
+      "title": "East London Zoo & Queens Park",
+      "image": "images/zoo.jpg",
+      "address": "Beaconsfield Rd, East London",
+      "description": "Home to a variety of animal species and lush gardens, perfect for educational trips and family outings.",
+      "link": "http://www.wzd.cz/zoo/AF/ZA/EC/east_london_zoo/za_ec_east_london-zoo_text01_eng.htm"
+    },
+    {
+      "title": "Steve Biko Centre",
+      "image": "images/biko.jpg",
+      "address": "One Zotshie Street, Ginsberg, King William’s Town",
+      "description": "Honors the life and legacy of anti-apartheid activist Steve Biko, with exhibitions, archives, and educational programs.",
+      "link": "https://givingmore.co.za/steve-biko-centre"
+    },
+    {
+      "title": "Buffalo Park Cricket Stadium",
+      "image": "images/buffalo.jpg",
+      "address": "Buffalo Park Dr, East London",
+      "description": "The city's premier cricket stadium hosting international and domestic matches with scenic views and lively crowds.",
+      "link": "https://www.espncricinfo.com/cricket-grounds/buffalo-park-east-london-59098"
+    }
+  ]
+}

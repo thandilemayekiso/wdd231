@@ -7,6 +7,9 @@
   <meta name="description" content="Empowering Mdantsane's business community">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
+  <script src="js/home.js" defer></script>
+  <script src="js/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -46,17 +49,20 @@
     </section>
 
     <!-- Weather Section -->
-    <section id="weather" class="container">
-      <h2>Weather Forecast</h2>
-      <p id="current-temp">Loading weather...</p>
-      <div id="forecast"></div>
-    </section>
+    <section id="weather-section">
+  <div id="weather">
+    <p id="current-temp">Loading weather...</p>
+    <div id="forecast"></div>
+  </div>
 
     <!-- Spotlight Section -->
     <section id="spotlight" class="container">
       <h2>Featured Members</h2>
       <div id="spotlightContainer" class="grid"></div>
     </section>
+   
+</section>
+
   </main>
 
   <footer>
