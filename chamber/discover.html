@@ -28,9 +28,12 @@
   </header>
 
   <main>
-    <main id="discover-cards" class="grid"></main>
+    <section id="discover-main-cards" class="grid"></section>
     <h2>Discover Mdantsane & East London</h2>
-
+<aside id="visit-message"></aside>
+  <section id="discover-cards" class="grid">
+    <!-- JavaScript loads cards here -->
+  </section>
     <!-- Sidebar Visit Message -->
     <aside id="visit-message" class="visit-sidebar"></aside>
 
@@ -41,7 +44,8 @@
     <div class="card">
   <h2>Hemingways Mall</h2>
   <figure>
-    <img src="images/hemingways.webp" alt="Hemingways Mall">
+   <img src="images/hemingways.webp" alt="Hemingways Mall" loading="lazy">
+
   </figure>
   <address>Cnr Western Ave & Two Rivers Dr, Cambridge Village, East London</address>
   <p>Hemingways Mall offers a wide variety of shopping, dining, and entertainment options...</p>
@@ -55,8 +59,6 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="scripts/getdates.js" defer></script>
-  <script src="scripts/discover.js" defer></script>
+  
 </body>
 </html>
